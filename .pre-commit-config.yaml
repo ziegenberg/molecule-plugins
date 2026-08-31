@@ -8,6 +8,7 @@ repos:
   - repo: meta
     hooks:
       - id: check-useless-excludes
+
   - repo: https://github.com/ansible/actions
     rev: v1.1.2
     hooks:
@@ -34,6 +35,7 @@ repos:
         priority: 0
       - id: pydoclint
         priority: 1
+
   - repo: https://github.com/astral-sh/uv-pre-commit
     rev: 0.12.8
     hooks:
@@ -44,6 +46,7 @@ repos:
         alias: deps
         args: ["--upgrade"]
         stages: [manual]
+
   - repo: https://github.com/biomejs/pre-commit
     rev: "v2.5.11"
     hooks:
@@ -52,6 +55,7 @@ repos:
         alias: biome
         args: [--unsafe]
         priority: 0
+
   - repo: https://github.com/pre-commit/pre-commit-hooks.git
     rev: v6.0.0
     hooks:
